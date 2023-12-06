@@ -1,1 +1,1 @@
-# Quiz-app
+Quiz App with javascript
