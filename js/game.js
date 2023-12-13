@@ -3,13 +3,12 @@ const container = document.getElementById("container");
 
 const URL = "https://opentdb.com/api.php?amount=10&difficulty=medium&type=multiple";
 
-let formatedData = null;
+let formattedData = null;
 
 const fechData = async () => {
   const response = await fetch(URL);
   const json = await response.json();
-  formatedData = formatData(json.result);
-  console.log(formatedData);
+  formattedData = formatData(json.results);
   start();
 };
 
