@@ -86,8 +86,12 @@ h3 {
   cursor: pointer;
   transition: all 0.2s ease-in;
 }
-#next-button:hover,
+
 #finish-button:hover {
+  background-color: #6757d9;
+  color: #fff;
+}
+#next-button:hover {
   background-color: #6757d9;
   color: #fff;
 }
