@@ -3,7 +3,7 @@ const container = document.getElementById("container");
 const questionText = document.getElementById("question-text");
 const answerList = document.querySelectorAll(".answer-text");
 
-const URL = "https://opentdb.com/api.php?amount=10&difficulty=medium&type=multiple";
+const URL = "https://opentdb.com/api.php?amount=10&category=27&difficulty=easy&type=multiple";
 
 let formattedData = null;
 let questionIndex = 0;
@@ -44,9 +44,22 @@ const showQuestion = () => {
   });
 };
 
-function checkAnswer() {}
+//show the correct button
+const checkAnswer = (event, index) => {
+  const isCorrect = index === correctAnswer ? true : false;
+  if (isCorrect) {
+    event.target.classList.add("correct");
+  } else {
+    event.target.classList.add("incorrect");
+    answerList[correctAnswer].classList.add("correct");
+  }
+};
 
 window.addEventListener("load", fetchData);
+
+//show list of question and click
 answerList.forEach((button, index) => {
-  button.addEventListener("click", checkAnswer);
+  button.addEventListener("click", (event) => {
+    checkAnswer(event, index);
+  });
 });

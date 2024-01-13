@@ -52,6 +52,7 @@
   flex-direction: column;
 }
 h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: #6757d9;
   color: #fff;
   padding: 20px;
@@ -94,4 +95,18 @@ h3 {
 #next-button:hover {
   background-color: #6757d9;
   color: #fff;
+}
+
+.correct {
+  background-color: #5bd7bc;
+}
+.incorrect {
+  background-color: #fe6681;
+}
+
+.correct:hover {
+  background-color: #5bd7bc;
+}
+.incorrect:hover {
+  background-color: #fe6681;
 }
