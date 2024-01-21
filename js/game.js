@@ -3,6 +3,8 @@ const container = document.getElementById("container");
 const questionText = document.getElementById("question-text");
 const answerList = document.querySelectorAll(".answer-text");
 const scoreText = document.getElementById("score");
+const nextButton = document.getElementById("next-button");
+const questionNumber = document.getElementById("question-number");
 
 const CORRECT_BONUS = 10;
 const URL = "https://opentdb.com/api.php?amount=10&category=27&difficulty=easy&type=multiple";
@@ -40,6 +42,7 @@ const start = () => {
 };
 
 const showQuestion = () => {
+  questionNumber.innerText = questionIndex + 1;
   const { question, answers, correctAnswerIndex } = formattedData[questionIndex];
   correctAnswer = correctAnswerIndex;
   questionText.innerText = question;
@@ -72,3 +75,22 @@ answerList.forEach((button, index) => {
     checkAnswer(event, index);
   });
 });
+
+//next button
+
+const nextHandler = () => {
+  if (questionIndex < formattedData.length - 1) {
+    questionIndex++;
+    isAccepted = true;
+    removeClasses();
+    showQuestion();
+  } else {
+    window.location.assign("../end.html");
+  }
+};
+
+nextButton.addEventListener("click", nextHandler);
+
+const removeClasses = () => {
+  answerList.forEach((button) => (button.classList = "answer-text"));
+};
