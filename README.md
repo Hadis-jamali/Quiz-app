@@ -1,9 +1,9 @@
 Quiz App with javascript
 
-
-![Screenshot 2024-02-04 210511](https://github.com/Hadis-jamali/Quiz-app/assets/132214893/29299010-40d4-42a9-9cdf-7a1005aae006)
-
-![quiz](https://github.com/Hadis-jamali/Quiz-app/assets/132214893/5f34daec-be5b-493a-a879-06354a283436)
+![FireShot Capture 039 - Quiz App - 127 0 0 1](https://github.com/Hadis-jamali/Quiz-app/assets/132214893/e364b9f9-9f74-4b20-a82a-b5d3434a9c55)
 
 
-![Screenshot 2024-02-04 210655](https://github.com/Hadis-jamali/Quiz-app/assets/132214893/e9a446be-55de-468c-ba11-9a3b31a64ea9)
+![FireShot Capture 040 - Quiz App - 127 0 0 1](https://github.com/Hadis-jamali/Quiz-app/assets/132214893/90fe00c5-5b01-4e97-980d-59d8691a4177)
+
+
+![FireShot Capture 041 - QuizApp-End Game - 127 0 0 1](https://github.com/Hadis-jamali/Quiz-app/assets/132214893/e07c9572-27ca-421e-8d35-e6fadca89136)
